@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(
+        90deg
+        rgba(241,237,220,1) 0%,
+        rgba(255,255,253,1) 50%,
+        rgba(252,246,232,1) 100%
+    );
+    padding: 70px 0;
+    border: none;
+    box-shadow: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FF3C2A;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color:#FF3C2A;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu-label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #FF3C2A;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header-txt {
+    flex-basis: 40%;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: #181818;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #4b4b4b;
+    font-size: 18px;
+    margin-bottom:25px;
+}
+
+.btn-1, .btn-3 {
+    display: inline-block;
+    padding: 18px 30px;
+    color:#FF3C2A;
+    border: 2px solid #FF3C2A;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.btn-1:hover, .btn-3:hover {
+    color:#FFFFFF;
+    background-color: #FF3C2A;
+}
+
+.header-img {
+    flex-basis: 60%;
+}
+
+.oferts {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1;
+    color:#181818;
+    margin-bottom: 10px;
+}
+
+.oferts-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ofert-1 {
+    flex-basis: calc(30% - 30px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: #f7fafa;
+    border-radius: 10px;
+}
+
+.ofert-1 img {
+    width: 130px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1;
+    color:#181818;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 10px;
+}
+
+.info {
+    color: #404b86;
+    font-size: 16px;
+}
+
+.precio {
+    color:#FF3C2A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-3 {
+    padding: 4px 20px;
+}
+
+/*esta es la sona de la media.css/*
+/* Ajustes responsivos para contenedor más grande pero usable en móviles */
+@media (max-width: 900px) {
+    .container {
+        width: calc(100vw - 40px);
+        height: auto;
+        border-radius: 20px;
+        padding: 36px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: calc(100vw - 24px);
+        height: auto;
+        border-radius: 14px;
+        padding: 24px 16px;
+    }
+}

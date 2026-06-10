@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 32px;
+}
+ 
+/* =====================
+   PAGINA CONTENEDOR
+===================== */
+.pagina {
+  position: relative;
+  width: clamp(420px, 85vw, 900px);
+  min-height: 760px;
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 42px 40px 48px 40px;
+}
+ 
+/* =====================
+   DECORACION CIRCLUOS
+===================== */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle-1 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    top: -80px;
+    right: -70px;
+}
+
+.circle-2 {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(225deg, #FFDE83, #D9D9D9);
+    opacity: 0.8;
+    top: 60px;
+    left: -50px;
+}
+
+.circle-3 {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(45deg, #FFDE83, #D9D9D9);
+    opacity: 0.75;
+    bottom: 320px;
+    right: -40px;
+}
+
+.circle-4 {
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(315deg, #FFDE83, #D9D9D9);
+    opacity: 0.7;
+    bottom: -90px;
+    left: -70px;
+}
+
+.circle-5 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(160deg, #FFDE83, #F2E8C3);
+    opacity: 0.5;
+    top: 160px;
+    left: -40px;
+}
+
+.circle-6 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(250deg, #FFDE83, #E8E8E8);
+    opacity: 0.55;
+    bottom: 140px;
+    right: 20px;
+}
+ 
+/* =====================
+   CONTENEDOR PRINCIPAL
+===================== */
+.contenedor {
+  position: relative;
+  z-index: 1;
+}
+ 
+/* =====================
+   TITULOS Y SUDTITULOS
+===================== */
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.section-title {
+  margin-top: 36px;
+}
+ 
+.subtitle {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+ 
+
+
+
+ 
+/* =====================
+   FORM GROUPS
+===================== */
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+ 
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+ 
+/* =====================
+   INPUTS
+===================== */
+.form-group input[type="text"],
+.form-group input[type="date"] {
+  width: 100%;
+  height: 38px;
+  border: 1.5px solid #c8c8c8;
+  border-radius: 999px;
+  padding: 0 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+ 
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus {
+  border-color: #c8a200;
+}
+ 
+/* =====================
+   SELECTOR (dropdown)
+===================== */
+.select-wrapper {
+  position: relative;
+}
+ 
+.select-wrapper select {
+  width: 100%;
+  height: 38px;
+  border: 1.5px solid #c8c8c8;
+  border-radius: 999px;
+  padding: 0 40px 0 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+  background: #ffffff;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+ 
+.select-wrapper select:focus {
+  border-color: #c8a200;
+}
+ 
+.select-wrapper::after {
+  content: '▾';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #555;
+  pointer-events: none;
+}
+ 
+/* =====================
+   DATE INFO FECHA ICONO 
+===================== */
+.input-icon-wrapper {
+  position: relative;
+}
+ 
+.input-icon-wrapper input[type="date"] {
+  padding-right: 42px;
+}
+ 
+/*El icono de calendario lo proporciona de forma nativa el navegador para los campos de fecha.*/
+.input-icon-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  cursor: pointer;
+  margin-right: 4px;
+}
+ 
+/* =====================
+  FILA DE FORMA (una al lado de la otra)
+===================== */
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+ 
+.form-group.half {
+  flex: 1;
+}
+ 
+/* =====================
+   BUTON REGISTRO
+===================== */
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+ 
+.btn-registrar {
+  background: #8B5E3C;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 11px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+ 
+.btn-registrar:hover {
+  background: #7a5234;
+  transform: scale(1.03);
+}
+ 
+.btn-registrar:active {
+  transform: scale(0.98);
+}
+
+

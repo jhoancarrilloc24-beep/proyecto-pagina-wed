@@ -1,0 +1,114 @@
+      /* Mobile responsive styles for all HTML pages */
+
+
+      
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    body {
+        min-height: auto;
+        padding: 0;
+    }
+
+    .container {
+        width: 92vw !important;
+        max-width: 420px;
+        padding: 20px 16px !important;
+        border-radius: 0 !important;
+    }
+
+    .logo,
+    .icono {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .logo img,
+    .icono img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .header {
+        min-height: auto !important;
+        padding: 30px 0 !important;
+    }
+
+    .header-content,
+    .promotion-content,
+    .oferts-content,
+    .product-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .header-txt,
+    .header-img,
+    .promotion-img,
+    .ofert-1,
+    .product-container {
+        width: 100% !important;
+    }
+
+    .header-txt h1 {
+        font-size: clamp(2rem, 6vw, 2.8rem) !important;
+    }
+
+    .ofert-1 img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .navbar {
+        display: none !important;
+        width: 100% !important;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex !important;
+    }
+
+    .navbar ul {
+        flex-direction: column !important;
+        gap: 10px !important;
+        background: rgba(255,255,255,0.98) !important;
+        padding: 18px !important;
+        border-radius: 18px !important;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    }
+
+    .navbar ul li {
+        float: none !important;
+    }
+
+    .menu-label {
+        display: block !important;
+    }
+
+    .menu-label img {
+        width: 26px !important;
+        height: auto !important;
+    }
+
+    .login-form {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .input-group input {
+        height: 48px !important;
+        border-radius: 12px !important;
+    }
+
+    .btn-acceder,
+    .btn-1,
+    .btn-3 {
+        width: 100% !important;
+        border-radius: 25px !important;
+    }
+
+    .register-row {
+        gap: 6px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+}

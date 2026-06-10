@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Decorative Circles */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* arriba derecha */
+.circle-1 {
+    width: 260px;
+    height: 260px;
+    background: linear-gradient(135deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    top: 7px;
+    right: -17px;
+}
+
+/* arriba izquierda*/
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(225deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    top: 25px;
+    left: -75px;
+}
+
+/*circulo abajo derecha*/
+.circle-3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    bottom: -85px;
+    right: -85px;
+}
+
+/*abajo izquierda*/
+.circle-4 {
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(315deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    bottom: -90px;
+    left: -70px;
+}
+
+/*circulo medio del centro de la izquierda*/
+.circle-5{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(245deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    bottom: 100px;
+    right: 120px;
+}
+
+/*circulo del medio de la derecha*/
+.circle-6{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(60deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    bottom: 220px;
+    right: 50px;
+}
+
+/*circulo del medio parte inferior izquierda*/
+.circle-7 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(120deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    top: 350px;
+    left: 30px;
+}
+
+/*circulo pequeño del sentro de la derecha*/
+.circle-8 {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(290deg, #FFDE83, #D9D9D9);
+    opacity: 0.75;
+    top: 200px;
+    right: 80px;
+}
+
+/*circulo mediano del medio del centro de la derecha*/
+.circle-9 {
+    width: 156px;
+    height: 156px;
+    background: linear-gradient(155deg, #FFDE83, #D9D9D9);
+    opacity: 0.7;
+    bottom: 200px;
+    right: 60px;
+}
+
+/*circulo pequeño de abajo del centro izquierda*/
+
+.circle-10 {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(210deg, #FFDE83, #D9D9D9);
+    opacity: 0.85;
+    bottom: 100px;
+    left: 40px;
+}
+
+/* Logo */
+.logo-ico-container {
+    margin-top: 45px;
+    z-index: 2;
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Lock Icon */
+.lock-container {
+    margin-top: 35px;
+    z-index: 2;
+}
+
+.octagon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lock-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.lock-icon polygon,
+.lock-icon rect,
+.lock-icon path {
+    stroke: #A47148;
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+/* Register Row */
+.register-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    z-index: 2;
+}
+
+.no-account {
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+}
+
+.register-link {
+    font-size: 13px;
+    color: #A47148;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Form */
+.login-form {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    padding: 12px 15px 0 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    background-color: #EFEFEF;
+    box-shadow: 0 0 0 2px rgba(164,113,72,0.25);
+}
+
+.input-group input::placeholder {
+    color: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 12px;
+    transform: translateY(0);
+    font-size: 10px;
+    color: #A47148;
+}
+
+/* Forgot Password */
+.forgot-password {
+    align-self: flex-end;
+    font-size: 12px;
+    color: #A47148;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.btn-acceder {
+    width: 100%;
+    height: 50px;
+    background-color: #A47148;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(164,113,72,0.35);
+}
+
+.btn-acceder:hover {
+    background-color: #8c603d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(164,113,72,0.4);
+}
+
+.btn-acceder:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(164,113,72,0.3);
+}
+
+/* esta es la zona de la media.css */
+/* Ajustes responsivos: mantener 100vw y 100vh en todos los tamaños */
+@media (max-width: 900px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+    }
+}
